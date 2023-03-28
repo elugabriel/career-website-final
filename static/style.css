@@ -4,6 +4,7 @@
         height: 360px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px;
     }
 
     #about-text{

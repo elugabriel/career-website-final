@@ -9,16 +9,28 @@
   
 </head>
   <body>
+    {% include "nav.html" %}
+    <img class="img-fluid" id ="banner"  src="/static/images/banner.jpg" alt="banner">
     <div class="container">
         <h1 class="text-center mt-2 mb-4">Jovian Career</h1>
-        <img class="img-fluid" id ="banner"  src="/static/images/banner.jpg" alt="banner">
-
-        <h2 class="text-center mt-4">About us</h2>
-        <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet risus feugiat in ante metus dictum at tempor. In hac habitasse platea dictumst vestibulum rhoncus. Consectetur a erat nam at lectus urna duis. Cum sociis natoque penatibus et. A diam sollicitudin tempor id eu nisl. Ac tortor vitae purus faucibus ornare suspendisse sed. Dictumst vestibulum rhoncus est pellentesque. Lorem ipsum dolor sit amet consectetur adipiscing elit ut. Urna molestie at elementum eu facilisis. Est ultricies integer quis auctor elit sed vulputate. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Tristique senectus et netus et malesuada fames ac turpis egestas. Tortor dignissim convallis aenean et tortor at risus viverra adipiscing. Massa sapien faucibus et molestie ac feugiat sed lectus.
-
-                
-        </p>
+        <div class="row" style="margin-bottom: 16px;">
+            <div class="col-md-6">
+                <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Aliquet risus feugiat in ante metus dictum at tempor.
+                    In hac habitasse platea dictumst vestibulum rhoncus. Consectetur a erat nam at lectus urna duis. 
+                    Cum sociis natoque penatibus et. A diam sollicitudin tempor id eu nisl. Ac tortor vitae purus faucibus 
+                    ornare suspendisse sed. Dictumst vestibulum rhoncus est pellentesque. Lorem ipsum dolor sit amet consectetur 
+                    adipiscing elit ut. Urna molestie at elementum eu facilisis. Est ultricies integer quis auctor elit sed vulputate. 
+                    Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Tristique senectus et netus et malesuada 
+                    fames ac turpis egestas. Tortor dignissim convallis aenean et tortor at risus viverra adipiscing. Massa sapien faucibus et 
+                    molestie ac feugiat sed lectus.
+                </p>
+            </div>
+                <dir class="d-none d-md-block col-md-6">
+                    <img src="/static/images/people.jpg" style="height: 320px; border-radius: 10px;">
+                </dir>
+        </div>
         <h2 class="text-center mt-2 mb-4">Job Openings</h2>
         <div>
             {% for job in jobs %}
@@ -31,7 +43,7 @@
         <div class = "text-center">
             <button class="btn btn-primary btn-lg text-center">Contact Us</button>
         </div >
-        <p id="about-text" class="text-center mt-4">Copyright @2023</p>
+        {% include 'footer.html' %}
 
     </div>
    </body>
